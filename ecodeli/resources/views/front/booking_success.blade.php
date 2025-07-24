@@ -29,7 +29,7 @@
 
 @push('scripts')
     <script>
-        const API_URL = "/api(";
+        const API_URL = "/api";
         const token = localStorage.getItem('token');
         const bookingId = window.location.pathname.split("/").pop();
 

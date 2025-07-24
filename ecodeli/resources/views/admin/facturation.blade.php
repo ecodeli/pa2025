@@ -16,7 +16,7 @@
     @push('scripts')
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const API_URL = '/api(';
+                const API_URL = '/api';
                 const token = localStorage.getItem('token');
                 const container = document.getElementById('factures-container');
                 const deleteBtn = document.getElementById('delete-selected');

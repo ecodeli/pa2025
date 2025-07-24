@@ -53,7 +53,7 @@
     @push('scripts')
         <script>
             document.addEventListener('DOMContentLoaded', async () => {
-                const API_URL = '/api(';
+                const API_URL = '/api';
                 const token = localStorage.getItem('token');
                 const annonceId = window.location.pathname.split('/')[3];
                 const annonceDetails = document.getElementById('annonce-details');

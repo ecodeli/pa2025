@@ -46,7 +46,7 @@
             const selectedCity = document.getElementById('selected-city');
 
             // Charger entrepôts avec authentification
-            fetch('/api(/api/storage/availability', {
+            fetch('/api/api/storage/availability', {
                 headers: {
                     'Authorization': 'Bearer ' + token
                 }
@@ -106,7 +106,7 @@
                 const end_date = document.getElementById('end_date').value;
                 const warehouse_id = document.getElementById('warehouse_id').value;
 
-                fetch('/api(/api/storage/reserve', {
+                fetch('/api/api/storage/reserve', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

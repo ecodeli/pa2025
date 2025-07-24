@@ -79,7 +79,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.10/locales/fr.global.min.js"></script>
 
     <script>
-        const API_URL = "/api(";
+        const API_URL = "/api";
         const token = localStorage.getItem("token");
 
         document.addEventListener("DOMContentLoaded", () => {

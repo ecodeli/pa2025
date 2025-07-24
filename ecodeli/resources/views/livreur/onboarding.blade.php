@@ -36,7 +36,7 @@
             document.getElementById("devenirLivreurBtn").addEventListener("click", async () => {
                 const token = localStorage.getItem("token");
                 try {
-                    const res = await fetch("/api(/api/user/become-courier", {
+                    const res = await fetch("/api/api/user/become-courier", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",

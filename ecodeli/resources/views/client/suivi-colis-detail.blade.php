@@ -14,7 +14,7 @@
     </div>
 
     <script>
-        const API_URL = '/api(';
+        const API_URL = '/api';
         const listingId = window.location.pathname.split('/').pop();
         const token = localStorage.getItem('token');
 

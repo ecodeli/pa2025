@@ -36,7 +36,7 @@
             const loader = document.getElementById("loader");
 
             try {
-                const res = await fetch("/api(/api/bookings/client", {
+                const res = await fetch("/api/api/bookings/client", {
                     headers: { Authorization: "Bearer " + token }
                 });
 

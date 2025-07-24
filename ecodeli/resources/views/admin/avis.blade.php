@@ -14,7 +14,7 @@
     @push('scripts')
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const API_URL = '/api(';
+                const API_URL = '/api';
                 const token = localStorage.getItem('token');
                 const avisList = document.getElementById('avis-list');
                 const pagination = document.getElementById('pagination-controls');

@@ -107,7 +107,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js"></script>
 
     <script>
-        const API_URL = "/api(";
+        const API_URL = "/api";
         const token = localStorage.getItem('token');
         const id = window.location.pathname.split("/").pop();
         let ad = null; // Global pour accès dans tous les événements

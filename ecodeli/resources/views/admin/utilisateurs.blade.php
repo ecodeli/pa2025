@@ -47,7 +47,7 @@
 
 @push('scripts')
     <script>
-        const API_URL = "/api(";
+        const API_URL = "/api";
         const token   = localStorage.getItem('token');
         let currentPage = 1, perPage = 8;
 

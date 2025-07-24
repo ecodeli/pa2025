@@ -16,7 +16,7 @@
     <script>
         const token = localStorage.getItem("token");
         const bookingId = window.location.pathname.split("/").pop();
-        const API_URL = "/api(";
+        const API_URL = "/api";
         const API_KEY = "5b3ce3597851110001cf6248f8a86418769d47b69aa4c4df724cc723";
 
         let map, routeLine, serviceMarker, serviceCircle, departureMarker, arrivalMarker;

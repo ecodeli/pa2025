@@ -12,7 +12,7 @@
 <script>
 class MessageService {
     constructor() {
-        this.baseURL = '/api(/api';
+        this.baseURL = '/api/api';
         this.token = localStorage.getItem('token');
     }
 
@@ -381,7 +381,7 @@ function messagingApp() {
         // Récupérer l'utilisateur actuel
         async getCurrentUser() {
             try {
-                const response = await fetch('/api(/api/user', {
+                const response = await fetch('/api/api/user', {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }

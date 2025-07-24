@@ -10,7 +10,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
-            const API_URL = '/api(';
+            const API_URL = '/api';
             const token = localStorage.getItem('token');
 
             const urlParams = new URLSearchParams(window.location.search);

@@ -27,7 +27,7 @@
 @push('scripts')
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
-            const API_URL = '/api(';
+            const API_URL = '/api';
             const urlParams = new URLSearchParams(window.location.search);
             const sessionId = urlParams.get("session_id") || localStorage.getItem('stripe_session_id');
             const urlToken = urlParams.get("t");

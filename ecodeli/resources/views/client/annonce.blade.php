@@ -18,7 +18,7 @@
 @push('scripts')
     <script type="module">
         import { requireAuth } from "/js/access-control.js";
-        const API_URL = "/api(";
+        const API_URL = "/api";
 
         document.addEventListener("DOMContentLoaded", async () => {
             const user = await requireAuth(["client", "service_provider"]);

@@ -34,7 +34,7 @@
         const table = document.getElementById('boxTable');
 
         // Charger entrepôts
-        fetch('/api(/api/admin/warehouses', {
+        fetch('/api/api/admin/warehouses', {
             headers: { "Authorization": `Bearer ${token}` }
         })
             .then(res => res.json())
@@ -53,7 +53,7 @@
             const warehouseId = this.value;
             if (!warehouseId) return table.style.display = 'none';
 
-            fetch(`/api(/api/admin/boxes/${warehouseId}`, {
+            fetch(`/api/api/admin/boxes/${warehouseId}`, {
                 headers: { "Authorization": `Bearer ${token}` }
             })
                 .then(res => res.json())
@@ -117,7 +117,7 @@
         }
 
         function libererBox(boxId) {
-            fetch('/api(/api/admin/boxes/free', {
+            fetch('/api/api/admin/boxes/free', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

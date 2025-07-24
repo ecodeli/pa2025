@@ -52,7 +52,7 @@
     @push('scripts')
         <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const API_URL = '/api(';
+                const API_URL = '/api';
                 const token = localStorage.getItem('token');
                 const annonceId = window.location.pathname.split('/')[3]; // /{role}/annonce/{id}/avis
                 const role = window.location.pathname.split('/')[1]; // 'client' ou 'livreur'

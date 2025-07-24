@@ -23,7 +23,7 @@
     <script>
         const token = localStorage.getItem('token');
 
-        fetch("/api(/api/warehouse-boxes", {
+        fetch("/api/api/warehouse-boxes", {
             headers: {
                 "Authorization": `Bearer ${token}`
             }

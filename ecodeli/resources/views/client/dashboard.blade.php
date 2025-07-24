@@ -44,7 +44,7 @@
             let abonnements = 0;
 
             try {
-                const res = await fetch("/api(/api/annonce/user", {
+                const res = await fetch("/api/api/annonce/user", {
                     headers: { Authorization: "Bearer " + token }
                 });
                 const annonces = await res.json();
@@ -56,7 +56,7 @@
             }
 
             try {
-                const res = await fetch("/api(/api/bookings/client", {
+                const res = await fetch("/api/api/bookings/client", {
                     headers: { Authorization: "Bearer " + token }
                 });
                 const bookings = await res.json();
@@ -70,7 +70,7 @@
             }
 
             try {
-                const res = await fetch("/api(/api/abonnement/current", {
+                const res = await fetch("/api/api/abonnement/current", {
                     headers: { Authorization: "Bearer " + token }
                 });
                 const abonnement = await res.json();

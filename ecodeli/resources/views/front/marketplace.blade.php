@@ -59,7 +59,7 @@
         async function fetchLikedAds() {
             const token = localStorage.getItem("token");
             try {
-                const res = await fetch("/api(/api/ad/like", {
+                const res = await fetch("/api/api/ad/like", {
                     headers: { Authorization: "Bearer " + token }
                 });
                 const data = await res.json();
@@ -94,7 +94,7 @@
         async function toggleLike(listingId, button) {
             const token = localStorage.getItem("token");
             try {
-                const res = await fetch("/api(/api/like/ad", {
+                const res = await fetch("/api/api/like/ad", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -123,7 +123,7 @@
                 const selectedType = document.querySelector('input[name="listingType"]:checked').value;
                 const providerType = document.querySelector('input[name="providerType"]:checked').value;
 
-                const url = new URL("/api(/api/marketplace/services");
+                const url = new URL("/api/api/marketplace/services");
                 url.searchParams.append("lat", lat);
                 url.searchParams.append("lng", lng);
                 if (city && !activeSearchMode) url.searchParams.append("city", city);
@@ -162,7 +162,7 @@
 
                 card.innerHTML = `
     <div class="img-wrapper">
-        <img src="/api(${a.photo_path}" alt="Photo">
+        <img src="/api${a.photo_path}" alt="Photo">
         <button class="btn-fav ${isLiked ? 'liked' : ''}" data-id="${a.listing_id}" title="Ajouter aux favoris">
             ${isLiked ? '❤️' : '♡'}
         </button>

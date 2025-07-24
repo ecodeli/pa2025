@@ -26,7 +26,7 @@
 
 @push('scripts')
     <script>
-        const API_URL = "/api(";
+        const API_URL = "/api";
         const token = localStorage.getItem('token');
         const routeId = window.location.pathname.split("/").pop();
 

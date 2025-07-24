@@ -11,7 +11,7 @@
 
 @push('scripts')
     <script type="module">
-        const API_URL = "/api(";
+        const API_URL = "/api";
         const urlParams = window.location.pathname.split("/");
         const userId = urlParams[urlParams.length - 1];
 

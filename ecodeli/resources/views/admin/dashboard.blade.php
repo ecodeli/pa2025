@@ -39,7 +39,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const API_URL = '/api(';
+            const API_URL = '/api';
             const token = localStorage.getItem('token');
 
             // Gestion des onglets

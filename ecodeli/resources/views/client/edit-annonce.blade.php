@@ -118,7 +118,7 @@
     <script type="module">
         import { requireAuth } from "/js/access-control.js";
         document.addEventListener("DOMContentLoaded", async () => {
-            const API_URL = "/api(";
+            const API_URL = "/api";
             const id = document.getElementById("annonce-id").value;
             const token = localStorage.getItem("token");
             const user = await requireAuth(["client", "service_provider"]);

@@ -387,7 +387,7 @@
 
                 selectedFiles.forEach(file => formData.append('photos[]', file));
                 try {
-                    const res = await fetch('/api(/api/annonce', {
+                    const res = await fetch('/api/api/annonce', {
                         method: 'POST',
                         headers: { 'Authorization': 'Bearer ' + token },
                         body: formData

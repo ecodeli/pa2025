@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             if (token) {
                 try {
-                    const res = await fetch("/api(/api/user", {
+                    const res = await fetch("/api/api/user", {
                         headers: { Authorization: "Bearer " + token }
                     });
                     const data = await res.json();
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                         const name = data.user.name;
 
                         if (data.user.avatar_url) {
-                            localStorage.setItem("avatar_url", `/api(${data.user.avatar_url}`);
+                            localStorage.setItem("avatar_url", `/api${data.user.avatar_url}`);
                         }
 
                         let links = `<a href="/">{{__('Accueil')}}</a>`;
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                         auth.innerHTML = `
     <a href="/user_profiles/${data.user.user_id}" class="avatar-link" title="Voir mon profil">
         <img
-            src="${data.user.avatar_url ? `/api(${data.user.avatar_url}` : (localStorage.getItem('avatar_url') || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(data.user.name)}`)}"
+            src="${data.user.avatar_url ? `/api${data.user.avatar_url}` : (localStorage.getItem('avatar_url') || `https://api.dicebear.com/7.x/initials/svg?seed=${encodeURIComponent(data.user.name)}`)}"
             alt="avatar"
             class="navbar-avatar"
             id="navbarAvatar"

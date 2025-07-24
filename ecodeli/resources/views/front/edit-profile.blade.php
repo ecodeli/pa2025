@@ -135,7 +135,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", async () => {
             const token = localStorage.getItem('token');
-            const res = await fetch('/api(/api/user', {
+            const res = await fetch('/api/api/user', {
                 headers: { 'Authorization': 'Bearer ' + token }
             });
             const data = await res.json();
@@ -163,7 +163,7 @@
                     address: document.getElementById('address').value
                 };
 
-                const res = await fetch('/api(/api/user', {
+                const res = await fetch('/api/api/user', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -208,7 +208,7 @@
 
                 const token = localStorage.getItem('token');
 
-                const response = await fetch('/api(/api/user', {
+                const response = await fetch('/api/api/user', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',

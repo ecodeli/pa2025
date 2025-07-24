@@ -35,7 +35,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const API_URL = '/api(';
+            const API_URL = '/api';
             const token = localStorage.getItem('token');
 
             // 🔧 1. Récupérer l'abonnement actuel
