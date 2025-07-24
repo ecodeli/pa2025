@@ -1,0 +1,58 @@
+.input-style {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 14px;
+    background-color: #f9fafb;
+}
+
+.fc .fc-toolbar {
+    font-size: 14px;
+    padding: 0.5rem 0;
+}
+
+.fc .fc-button {
+    background-color: #f3f4f6;
+    border: none;
+    border-radius: 10px;
+    color: #111827;
+    padding: 6px 12px;
+    font-size: 13px;
+    margin: 0 2px;
+}
+
+.fc-event {
+    padding: 6px 12px !important;
+    font-size: 13px;
+    border-radius: 12px !important;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.fc-daygrid-event {
+    display: block;
+    background-color: inherit !important;
+    color: #fff !important;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.fc .custom-event {
+    background-color: var(--fc-event-bg-color, #3b82f6) !important;
+    color: var(--fc-event-text-color, #ffffff) !important;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: none !important;
+}

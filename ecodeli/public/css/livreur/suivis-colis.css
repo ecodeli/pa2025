@@ -1,0 +1,223 @@
+.card-segment {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.card-header {
+    background-color: #f1f5f9;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.2s;
+}
+
+.card-header:hover {
+    background-color: #e2e8f0;
+}
+
+.card-body {
+    display: none;
+    padding: 1.25rem;
+    background-color: #ffffff;
+}
+
+.card-body.active {
+    display: block;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+}
+
+.input {
+    width: 100%;
+    padding: 0.65rem 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    transition: border 0.2s;
+}
+.input:focus {
+    outline: none;
+    border-color: #3182ce;
+}
+
+.btn {
+    padding: 0.6rem 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-success {
+    background-color: #38a169;
+    color: #fff;
+}
+.btn-success:hover {
+    background-color: #2f855a;
+}
+
+.btn-warning {
+    background-color: #ed8936;
+    color: #fff;
+}
+.btn-warning:hover {
+    background-color: #dd6b20;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid #3182ce;
+    color: #3182ce;
+}
+.btn-outline-primary:hover {
+    background-color: #ebf8ff;
+}
+
+.btn-outline-info {
+    background-color: transparent;
+    border: 1px solid #0ea5e9;
+    color: #0ea5e9;
+}
+.btn-outline-info:hover {
+    background-color: #e0f2fe;
+}
+
+.btn-outline-secondary {
+    background-color: transparent;
+    border: 1px solid #94a3b8;
+    color: #64748b;
+}
+.btn-outline-secondary:hover {
+    background-color: #f1f5f9;
+}
+
+.hidden {
+    display: none;
+}
+
+.mt-2 { margin-top: 0.5rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+
+/* Progress Tracker Steps */
+.progress-tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 0 10px;
+}
+
+.progress-tracker::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    height: 3px;
+    background-color: #e5e7eb;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.step {
+    position: relative;
+    background-color: #e2e8f0;
+    color: #1e293b;
+    border-radius: 50px;
+    padding: 6px 14px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 1;
+    transition: background 0.3s, color 0.3s;
+}
+.step.active {
+    background-color: #0ea5e9;
+    color: white;
+    box-shadow: 0 0 0 3px #bae6fd;
+}
+
+
+.progress-tracker {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.progress-tracker::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    right: 6%;
+    height: 4px;
+    background-color: #ccc;
+    transform: translateY(-50%);
+    z-index: 0;
+    border-radius: 4px;
+}
+
+.progress-tracker .step {
+    position: relative;
+    z-index: 1;
+    background: #eee;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 22%;
+    transition: all 0.3s ease;
+}
+
+.progress-tracker .step.active {
+    background-color: #4e73df;
+    color: white;
+}
+
+
+.badge {
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    margin-left: 10px;
+    font-weight: 500;
+    color: white;
+}
+
+.badge-picked {
+    background-color: #6c757d; /* gris */
+}
+
+.badge-transit {
+    background-color: #007bff; /* bleu */
+}
+
+.badge-arrived {
+    background-color: #ffc107; /* jaune */
+    color: black;
+}
+
+.badge-completed {
+    background-color: #28a745; /* vert */
+}

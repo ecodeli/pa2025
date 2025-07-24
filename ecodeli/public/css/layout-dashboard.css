@@ -1,0 +1,11 @@
+#usersRoleChart {
+    width: 600px !important;
+    height: 600px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#usersRole{
+    font-size: 20px;
+}

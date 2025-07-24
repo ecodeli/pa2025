@@ -1,0 +1,121 @@
+.page-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background-color: #ffffff;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.services-colis, .services-personne, .cta-abonnement, .cta-contact {
+    padding: 60px 20px;
+}
+
+.services-colis h2,
+.services-personne h2,
+.cta-abonnement h2,
+.cta-contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+}
+
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #007BFF;
+}
+
+.service-card p {
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Abonnement */
+.formules {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.formule {
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.formule h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.formule p,
+.formule ul {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.formule ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.cta-contact {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.cta-contact a {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.services-colis {
+    background: linear-gradient(to bottom, #fffaf5, #fff0e6);
+}
+
+.services-personne {
+    background: linear-gradient(to bottom, #fff0e6, #fffaf5);
+}
+

@@ -1,0 +1,356 @@
+/* ======================================================
+   1) Layout principal : photos + infos à gauche, vendeur à droite
+   ====================================================== */
+#ad-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ======================================================
+   2) Galerie
+   ====================================================== */
+.photo-box {
+    position: relative; /* nécessaire pour le positionnement absolu du bouton like */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+.swiper {
+    height: 400px;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======================================================
+   3) Informations de l’annonce
+   ====================================================== */
+.annonce-info {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.annonce-info h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.annonce-info .meta-line {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: .5rem;
+}
+.annonce-info .price-line {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #222;
+    margin: .5rem 0 1rem;
+}
+.annonce-info p {
+    line-height: 1.5;
+    margin: .5rem 0;
+}
+
+/* ======================================================
+   4) Boutons like & réserver
+   ====================================================== */
+.ad-actions-top {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+}
+
+#like-btn {
+    font-size: 1.8rem;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff385c;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.reserver-btn {
+    background-color: #3B220F;
+    color: white;
+    padding: .8rem 1.4rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.reserver-btn:hover {
+    background-color: #3B220F;
+}
+
+/* ======================================================
+   5) Encadré vendeur
+   ====================================================== */
+.seller-box {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 100px;
+    text-align: center;
+}
+.seller-box .user-initial {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #e7632f;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.8rem;
+    overflow: hidden;
+}
+
+.seller-box .user-initial img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.seller-box .name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.seller-box .reactif {
+    font-size: .85rem;
+    color: #777;
+    margin-top: .3rem;
+    margin-bottom: 1.2rem;
+}
+.seller-box button {
+    width: 100%;
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: .8rem;
+}
+.seller-box .reserve-btn {
+    background: #3B220F;
+    color: white;
+}
+.seller-box .message-btn {
+    background: #003b65;
+    color: white;
+}
+
+/* ======================================================
+   6) Styles communs & resets
+   ====================================================== */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #f6f6f6;
+    color: #222;
+    margin: 0; padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: popup 0.3s ease-out;
+}
+@keyframes popup {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+
+#action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+#action-buttons .btn-outline {
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#action-buttons .btn-outline:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+#action-buttons .info-text {
+    font-size: 0.95rem;
+    color: #6b7280; /* gray-500 */
+}
+
+/* ======================================================
+   7) Modale Réservation – amélioration UX
+   ====================================================== */
+.modal h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.modal p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 1rem 0;
+    justify-content: center;
+}
+
+.modal-buttons button {
+    flex: 1;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.modal-buttons .btn-blue {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.modal-buttons .btn-outline {
+    border: 2px solid #3b82f6;
+    background-color: white;
+    color: #3b82f6;
+}
+
+.modal-buttons .btn-outline:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+#routeSelection label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+#routeSelection select,
+#routeSelection input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+#routeSelection button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#routeSelection button:hover {
+    background-color: #2563eb;
+}
+
+.swiper {
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-blue {
+    background-color: #451f05;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-blue:hover {
+    background-color: #2563eb;
+}
+
+#deliveryOptions > button {
+    display: block;
+}

@@ -1,0 +1,96 @@
+/* Container principal */
+#delivery-detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Titre */
+#delivery-detail-container h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Informations générales */
+.delivery-summary {
+    font-size: 1rem;
+}
+
+.delivery-summary h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Carte code */
+.delivery-code-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.delivery-code-card .h3 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Avatar */
+.delivery-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Description */
+.delivery-description {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+/* Statut */
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
+/* Zone commentaire */
+.comment-box {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.comment-box textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Bouton envoyer */
+.btn-send {
+    background-color: #007bff;
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .delivery-summary {
+        flex-direction: column;
+    }
+
+    .delivery-avatar {
+        margin-bottom: 1rem;
+    }
+
+    .delivery-code-card {
+        margin-top: 1rem;
+    }
+}

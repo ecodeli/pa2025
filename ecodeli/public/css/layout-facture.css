@@ -1,0 +1,165 @@
+.factures-wrapper {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.factures-wrapper h2 {
+    color: #3B220F;
+    margin-bottom: 2rem;
+}
+
+.facture-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFACD;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.facture-numero,
+.facture-nom,
+.facture-etat {
+    flex: 1;
+    padding: 0 0.5rem;
+    color: #3B220F;
+}
+
+.facture-etat {
+    text-align: center;
+}
+
+.facture-checkbox {
+    width: 40px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    transform: scale(1.4);
+    accent-color: #3B220F;
+}
+
+.pagination-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Boutons Précédent / Suivant */
+.pagination-btn {
+    background-color: #3B220F;
+    color: #FFF4C2;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 6px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background-color: #FFF4C2;
+    color: #3B220F;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Page actuelle */
+.pagination-page {
+    background-color: #FFF4C2;
+    color: #3B220F;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+}
+.btn-delete-selected {
+    background-color: #3B220F;
+    color: #FFF6CC;
+    padding: 10px 20px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn-delete-selected:hover {
+    background-color: #FFF6CC;
+    color: #3B220F;
+}
+
+.pagination-nav {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-btn {
+    background-color: #3B220F;
+    color: #FFF6CC;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.page-btn:hover {
+    background-color: #FFF6CC;
+    color: #3B220F;
+}
+
+.page-current {
+    background-color: #FFF6CC;
+    color: #3B220F;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+.facture-users {
+    font-size: 0.9em;
+    color: #3B220F;
+    line-height: 1.3em;
+}
+.btn-paginate {
+    background-color: #3B220F;
+    color: #fff8c5;
+    border: none;
+    padding: 8px 14px;
+    margin: 0 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-paginate:hover {
+    background-color: #fff8c5;
+    color: #3B220F;
+}
+.page-active {
+    background-color: #fff8c5;
+    color: #3B220F;
+    padding: 8px 14px;
+    margin: 0 4px;
+    border-radius: 6px;
+}
+.btn-delete-global {
+    background-color: #3B220F;
+    color: #fff8c5;
+    border: none;
+    padding: 10px 18px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-delete-global:hover {
+    background-color: #fff8c5;
+    color: #3B220F;
+    border: 1px solid #3B220F;
+}

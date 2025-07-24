@@ -1,0 +1,48 @@
+.star {
+    color: gold;
+    font-size: 1.5rem;
+}
+.avis-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.pagination {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link:hover {
+    background-color: #3B220F;
+    color: #fff;
+}
+
+.pagination .active .page-link {
+    background-color: #3B220F;
+    color: #fff;
+    border-color: #3B220F;
+}
+
+.pagination .disabled .page-link {
+    background-color: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #ddd;
+}

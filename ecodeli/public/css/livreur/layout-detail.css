@@ -1,0 +1,73 @@
+/* Limite largeur contenu */
+.container.py-4 {
+    max-width: 900px;
+}
+
+/* Carte de détail */
+.detail-card {
+    background-color: #fff9c4;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Titre centré */
+.detail-card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Grille des champs */
+.dc-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.dc-box {
+    display: flex;
+    flex-direction: column;
+}
+.dc-box .label {
+    font-size: .85rem;
+    color: #555;
+    margin-bottom: .25rem;
+}
+.dc-box .value {
+    background-color: #3e2723;
+    color: #fff;
+    padding: .5rem;
+    border-radius: .25rem;
+    text-align: center;
+}
+
+/* Galerie de photos */
+.dc-photos {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.dc-photos img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #3e2723;
+    border-radius: .25rem;
+}
+
+/* Bouton Terminer */
+#completeBtn {
+    display: block;
+    margin: 0 auto;
+    background-color: #3e2723;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+#completeBtn:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}

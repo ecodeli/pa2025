@@ -1,0 +1,149 @@
+.wallet-container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.wallet-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.wallet-balance {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    margin-bottom: 2rem;
+}
+
+.wallet-balance p {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+.wallet-balance h2 {
+    font-size: 2rem;
+    color: #10b981;
+    font-weight: bold;
+}
+
+.wallet-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-blue {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-blue:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-outline {
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    background: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+.wallet-history {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.wallet-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.wallet-history th,
+.wallet-history td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.wallet-history .gain {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.wallet-history .withdraw {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.wallet-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.wallet-actions form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.wallet-actions input[type="number"],
+.wallet-actions input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.wallet-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3B220F;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wallet-actions button:hover {
+    background-color: #5a3518;
+}
+.wallet-actions-row {
+    display: flex;
+    gap: 10px;
+    max-width: 400px; /* largeur identique à ta carte solde */
+    margin-left: 0; /* alignement à gauche */
+}
+
+.wallet-balance {
+    max-width: 400px; /* assure la même largeur pour la carte solde */
+    margin-left: 0; /* aligne la carte à gauche */
+}
+
+

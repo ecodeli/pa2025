@@ -1,0 +1,88 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #3B220F;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.annonce-card {
+    background-color: #FFF6CC;
+    border: 2px solid #3B220F;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.annonce-card h3 {
+    color: #3B220F;
+    margin-bottom: 10px;
+}
+
+.annonce-card p {
+    margin: 5px 0;
+}
+
+form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #3B220F;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #3B220F;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+select:focus, textarea:focus {
+    outline: none;
+    border-color: #2a170b;
+}
+
+button.btn.btn-primary {
+    background-color: #3B220F;
+    color: #FFF6CC;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.btn.btn-primary:hover {
+    background-color: #FFF6CC;
+    color: #3B220F;
+    border: 1px solid #3B220F;
+}
+
+#avis-status p {
+    font-weight: bold;
+}
+.text-danger {
+    color: red;
+}
+.text-success {
+    color: green;
+}
+#star-rating .star {
+    cursor: pointer;
+    color: grey;
+}
+
+#star-rating .star.selected,
+#star-rating .star.hover {
+    color: gold;
+}

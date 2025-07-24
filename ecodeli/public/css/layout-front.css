@@ -1,0 +1,503 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background-color: white;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 70px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+.btn-login {
+    background-color: #fff9cc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s ease;
+    font-size: 20px;
+}
+
+.btn-login:hover {
+    background-color: #ffe066;
+}
+
+.btn-register {
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background 0.3s ease;
+    font-size: 20px;
+}
+
+.btn btn-blue {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn btn-blue:hover {
+    background-color: #ffe066;
+}
+
+.hero {
+    background-color: #3B220F;
+    color: white;
+    padding: 60px 60px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #fff9cc;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.boutons .btn {
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.btn-yellow {
+    background-color: #fff9cc;
+    color: black;
+}
+
+.btn-blue {
+    background-color: #007BFF;
+    color: white;
+}
+
+.btn-yellow:hover {
+    background-color: #ffe066;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+}
+
+.illustration img {
+    width: 500px;
+    max-width: 100%;
+}
+
+
+.fonctionnement {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.fonctionnement h2 {
+    color: #007BFF;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.etapes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.etape {
+    background-color: #3399ff;
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.etape h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.etape img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+.profils {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.profils h2 {
+    font-size: 28px;
+    color: #3B220F;
+    margin-bottom: 40px;
+}
+
+.profils-cartes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profils-cartes .carte {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.profils-cartes .carte:hover {
+    transform: translateY(-5px);
+}
+
+.profils-cartes .carte img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+
+.services-personnalises {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-personnalises h2 {
+    font-size: 28px;
+    color: #007BFF;
+    margin-bottom: 40px;
+}
+
+.services-liste {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+
+.avantages {
+    background-color: #fff9cc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.avantages h2 {
+    font-size: 28px;
+    color: #3B220F;
+    margin-bottom: 40px;
+}
+
+.avantages-liste {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.avantage {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+
+.logistique {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.logistique h2 {
+    font-size: 28px;
+    color: #3B220F;
+    margin-bottom: 20px;
+}
+
+.logistique p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.chariot {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.chariot h2 {
+    font-size: 26px;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.chariot p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.social {
+    background-color: #3B220F;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.social h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.social p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.abonnements {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.abonnements h2 {
+    font-size: 28px;
+    color: #007BFF;
+    margin-bottom: 40px;
+}
+
+.formules {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.formule {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    width: 260px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.formule h3 {
+    color: #3B220F;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.formule ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.formule ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.aide {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.aide h2 {
+    font-size: 26px;
+    color: #3B220F;
+    margin-bottom: 15px;
+}
+
+.aide a {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.aide a:hover {
+    text-decoration: underline;
+}
+
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.auth a i {
+    font-size: 30px;
+    margin: 0 5px;
+    color: black;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.auth a i:hover {
+    color: #007BFF;
+}
+
+
+footer {
+    background-color: #3B220F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+body {
+    margin: 0!important;
+    font-family: Helvetica;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-area {
+    flex: 1;
+}
+
+footer {
+    background-color: #3B220F;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    transition: border-color 0.2s ease;
+    margin-right: 0.5rem;
+}
+
+.navbar-avatar:hover {
+    border-color: #3B220F;
+}
+
+.avatar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#menu-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.select-langue {
+    width: 35px; /* largeur fixe */
+    max-width: 35px;
+    min-width: 25px;
+    padding: 6px 8px;
+    border: 2px solid #3B220F;
+    border-radius: 8px;
+    background-color: white;
+    color: #3B220F;
+    font-weight: bold;
+    font-size: 14px;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+.select-langue:hover {
+    background-color: #3B220F;
+    color: white;
+    border-color: #3B220F;
+}

@@ -1,0 +1,135 @@
+/* Conteneur principal */
+.container {
+    background-color: #fffdf5;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+/* Titres */
+h2, h4 {
+    color: #3B220F;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Cartes entrepôts */
+.warehouse-card {
+    background-color: #fff9cc;
+    border: 2px solid #e4d9b4;
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(59, 34, 15, 0.1);
+    cursor: pointer;
+    height: 100%;
+}
+
+.warehouse-card:hover {
+    background-color: #fff5b0;
+    border-color: #3B220F;
+    box-shadow: 0 6px 12px rgba(59, 34, 15, 0.2);
+}
+
+.warehouse-card h5 {
+    font-size: 1.5rem;
+    color: #3B220F;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.warehouse-card p {
+    font-size: 1rem;
+    color: #5a4d35;
+    margin: 0;
+}
+
+/* Formulaire réservation */
+#reservationSection .card {
+    background-color: #fffaf0;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 10px rgba(59, 34, 15, 0.08);
+}
+
+label {
+    color: #3B220F;
+    font-weight: 500;
+}
+
+input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+input[type="date"]:focus {
+    border-color: #3B220F;
+    box-shadow: 0 0 5px rgba(59, 34, 15, 0.2);
+    outline: none;
+}
+
+/* Bouton de réservation */
+button[type="submit"] {
+    background-color: #3B220F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2a180a;
+}
+
+/* Responsive (facultatif) */
+@media (max-width: 768px) {
+    .warehouse-card {
+        padding: 1rem;
+    }
+
+    .warehouse-card h5 {
+        font-size: 1.2rem;
+    }
+
+    #reservationSection .card {
+        width: 100% !important;
+    }
+}
+.warehouse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.warehouse-card {
+    background-color: #fff9cc;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.08);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.warehouse-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.warehouse-card.active {
+    border: 2px solid #3B220F;
+    background-color: #ffe78d;
+}
+#reservationSection {
+    margin-top: 4rem ;
+    padding-top: 2rem;
+}
+#reservationSection .card {
+    border-radius: 1rem;
+    background-color: #fff9cc;
+    border: 1px solid #3B220F22;
+}

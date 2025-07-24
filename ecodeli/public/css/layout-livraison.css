@@ -1,0 +1,79 @@
+.livraison-wrapper {
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #fff9c4;
+    padding: 1rem;
+    overflow-y: auto;
+    border-right: 2px solid #3e2100;
+}
+
+.annonces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.annonces li {
+    background-color: #fcefb4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #3e2100;
+    border-radius: 5px;
+}
+
+.annonces .prix {
+    font-weight: bold;
+    color: #3e2100;
+}
+
+.map-container {
+    flex: 1;
+    height: 100%;
+}
+
+.filtre-trajet {
+    margin-bottom: 1rem;
+    background-color: #fff3c4;
+    padding: 1rem;
+    border-radius: 5px;
+    border-left: 4px solid #3e2100;
+}
+
+.filtre-trajet h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #3e2100;
+}
+
+.choix-mode label {
+    margin-right: 1rem;
+    font-weight: bold;
+    color: #3e2100;
+}
+
+.champs-ville {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.input-ville {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-ajouter-etape {
+    background-color: #3e2100;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+}

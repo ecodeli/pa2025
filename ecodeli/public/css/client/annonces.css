@@ -1,0 +1,114 @@
+.annonces-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.annonces-container h2 {
+    text-align: center;
+    color: #3B220F;
+    margin-bottom: 30px;
+}
+
+.actions {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-blue {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+}
+
+.list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.annonce-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.annonce-card:hover {
+    transform: translateY(-5px);
+}
+
+.annonce-photo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.annonce-actions {
+    margin-top: 15px;
+}
+
+.btn-red {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-red:hover {
+    background-color: #c82333;
+}
+
+
+.btn-edit {
+    background-color: #f0f8ff;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: #e0f0ff;
+    color: #0056b3;
+}
+.btn-avis {
+    background-color: #3B220F;
+    color: #FFF6CC;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-avis:hover {
+    background-color: #FFF6CC;
+    color: #3B220F;
+    border: 1px solid #3B220F;
+}

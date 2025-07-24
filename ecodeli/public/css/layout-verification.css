@@ -1,0 +1,72 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h2 {
+    color: #3B220F;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #3B220F;
+    color: #FFF6CC;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #FFF6CC;
+    color: #3B220F;
+    border: 1px solid #3B220F;
+}
+
+#upload-status {
+    margin-top: 20px;
+}
+input[type="file"] {
+    display: block;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #3B220F;
+    background-color: #fff8c5; /* beige EcoDeli */
+    border: 2px solid #3B220F;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #3B220F;
+    color: #fff8c5;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #fff8c5;
+    color: #3B220F;
+    border: 1px solid #3B220F;
+}
+
+
+.full-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 20px;
+}

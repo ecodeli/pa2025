@@ -1,0 +1,59 @@
+.avis-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff8f0; /* léger beige */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.avis-card p {
+    margin: 0.3rem 0;
+}
+
+.star {
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.star.inactive {
+    color: lightgrey;
+}
+
+.btn-delete {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #c0392b; /* rouge delete */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #e74c3c;
+}
+
+h2 {
+    color: #3B220F; /* ton marron principal */
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 800px;
+}
+
+@media (max-width: 576px) {
+    .avis-card {
+        padding: 0.8rem;
+    }
+
+    .btn-delete {
+        width: 100%;
+        text-align: center;
+    }
+}
